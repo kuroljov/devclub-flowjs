@@ -1,0 +1,23 @@
+{
+  "name": "devclub-flowjs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pug src/index.pug --pretty --out public",
+    "dev": "npm run build -- --watch & npm run serve",
+    "serve": "browser-sync start --server --files 'public/*' --index 'public/index.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuroljov/devclub-flowjs.git"
+  },
+  "author": "Viktor Kuroljov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuroljov/devclub-flowjs/issues"
+  },
+  "homepage": "https://github.com/kuroljov/devclub-flowjs#readme",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
