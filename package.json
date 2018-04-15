@@ -2,9 +2,9 @@
   "name": "devclub-flowjs",
   "version": "1.0.0",
   "scripts": {
-    "build": "pug src/index.pug --pretty --out .",
+    "build": "pug src/index.pug --pretty --out docs",
     "dev": "npm run build -- --watch & npm run serve",
-    "serve": "browser-sync start -sf 'index.html' --ss 'images'"
+    "serve": "browser-sync start -sf 'docs/index.html' --ss 'images'"
   },
   "repository": {
     "type": "git",
