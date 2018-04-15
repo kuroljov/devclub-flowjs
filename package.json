@@ -4,7 +4,7 @@
   "scripts": {
     "build": "pug src/index.pug --pretty --out docs",
     "dev": "npm run build -- --watch & npm run serve",
-    "serve": "browser-sync start -sf 'docs/index.html' --ss 'images'"
+    "serve": "browser-sync start -sf 'docs/index.html' --index 'docs/index.html' --ss 'images'"
   },
   "repository": {
     "type": "git",
