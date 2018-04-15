@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/blood.min.css">
+    <style>
+      .reveal section img {
+        border: none;
+      }
+    </style>
+  </head>
+</html>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Statically typed <mark>JS</mark></h1>
+        <h3>was undefined</h3><small>by Viktor Kuroljov</small>
+      </section>
+      <section>
+        <h3>Why & What</h3>
+      </section>
+      <section>
+        <section>
+          <h3>Dynamic Type System</h3>
+          <h1 class="fragment">Is Bad</h1>
+        </section>
+        <section><img src="hit.png"></section>
+        <section><img src="hit-call.png"></section>
+      </section>
+      <section>
+        <section>
+          <h1>How we want</h1>
+        </section>
+        <section><img src="hit-flow.png"></section>
+        <section><img src="hit-flow-call.png"></section>
+      </section>
+      <section>
+        <section>
+          <h1>Tests !== docs</h1>
+        </section>
+      </section>
+      <section>
+        <h3>Flow</h3>
+        <ul>
+          <li>Static Type Checker</li>
+          <li>Need to delete type annotations afterwards (babel)</li>
+          <li>Config eslint to work</li>
+          <li>OCaml Based</li>
+          <li>By Facebook</li>
+        </ul>
+      </section>
+      <section>
+        <h3>TypeScript</h3>
+        <ul>
+          <li>Transpiler</li>
+          <li>Feels like C#</li>
+          <li>By Microsoft</li>
+        </ul>
+      </section>
+      <section>
+        <section>
+          <h1>Examples</h1>
+          <h3>That fit in 14 LOC</h3>
+        </section>
+        <section><img src="sum-flow.png"></section>
+        <section><img src="first-flow.png"></section>
+        <section><img src="el-flow.png"></section>
+        <section><img src="time-flow.png"></section>
+        <section><img src="hero-flow.png"></section>
+        <section><img src="api-flow.png"></section>
+        <section><img src="map-flow.png"></section>
+      </section>
+      <section>
+        <h3>Getting started</h3><a href="https://flow.org/en/docs/install/">flow.org/en/docs/install</a>
+      </section>
+      <section>
+        <h1>Thx</h1>
+      </section>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.js"></script>
+  <script>Reveal.initialize()</script>
+</body>
