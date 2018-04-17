@@ -2,9 +2,12 @@
   "name": "devclub-flowjs",
   "version": "1.0.0",
   "scripts": {
-    "build": "pug src/index.pug --pretty --out .",
-    "dev": "npm run build -- --watch & npm run serve",
-    "serve": "browser-sync start -sf 'index.html' --ss 'images'"
+    "build:slides": "pug slides/index.pug --pretty --out .",
+    "dev": "npm run build:slides -- --watch & npm run serve",
+    "serve": "browser-sync start -sf 'index.html'",
+    "build:src": "babel src -d dist",
+    "node": "babel-node",
+    "test": "clear && babel-node test/*"
   },
   "repository": {
     "type": "git",
@@ -17,11 +20,14 @@
   },
   "homepage": "https://github.com/kuroljov/devclub-flowjs#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "browser-sync": "^2.23.6",
+    "cli-table": "^0.3.1",
     "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-flowtype": "^2.46.2",
